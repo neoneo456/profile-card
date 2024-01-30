@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --clr-darkcyan: hsl(185, 75%, 39%);
+    --clr-darkblue: hsl(229, 23%, 23%);
+    --clr-grayishblue: hsl(227, 10%, 46%);
+    --clr-darkgrey: hsl(0, 0%, 59%);
+
+    --ff-primary: 'Kumbh Sans', sans-serif;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-primary);
+    font-size: 18px;
+    color: var(--clr-darkblue);
+}
+
+.main{
+    background-color: var(--clr-darkcyan);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.container{
+    background-color: white;
+    text-align: center;
+    max-width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.upper-container{
+    height: 150px;
+    width: 350px;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+}
+
+.img-sec{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto -30px auto;
+    border: 5px solid white;
+}
+
+.img-sec img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.card-body{
+    margin-top: 54px;
+    margin-bottom: -75px;
+    height: 250px;
+    line-height: 1.8rem;
+}
+
+.name{
+    font-size: 20px
+}
+
+.name span{
+    color: var(--clr-darkgrey);
+    font-weight: 500;
+}
+
+.city{
+    font-size: 16px;
+    color: var(--clr-darkgrey);
+    font-weight: 500;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.589);
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.activity-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.activity-container h4{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.act{
+    font-size: 13px;
+    font-weight: 100;
+    color: var(--clr-grayishblue);
+    letter-spacing: 2px;
+}
